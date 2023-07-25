@@ -1,0 +1,18 @@
+.DTC143ZEBTL :1 ;ROHM, DTC143ZEBTL NPN Digital Transistor, 100 mA 50 V 4.7 k, Ratio Of 10, 3-Pin SC-89
+SOTFL50P160X85-3N
+*STM Q
+*NGS
+*PLB 1="B" 2="E" 3="C"
+*MXP 3
+*DFN DTC143ZEBTL
+~!Manufacturer_Name (ROHM Semiconductor)
+~!Manufacturer_Part_Number (DTC143ZEBTL)
+~!Mouser Part Number (755-DTC143ZEBTL)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/DTC143ZEBTL?qs=IsRgwgmxh6%252Bn%252Bp0edl8N%2Fw%3D%3D)
+~!Arrow Part Number (DTC143ZEBTL)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/dtc143zebtl/rohm-semiconductor)
+~!Link Datasheet (https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/65f79013acac3be2ce67f49282ff3c06.pdf)
+~!Height (0.85mm)
+~!3D_Model (DTC143ZEBTL)
+DTC143ZEBTL
+1.1!U 2.1!U 3.1!U 

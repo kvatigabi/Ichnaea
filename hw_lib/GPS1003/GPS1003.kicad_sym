@@ -1,0 +1,39 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "GPS1003" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 0.0 6.35 0)
+      (effects (font (size 1.27 1.27)) (justify bottom))
+    )
+    (property "Value" "GPS1003" (id 1) (at 0 0.0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom))
+    )
+    (property "Footprint" "GPS1003" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "GPS1003_0_0"
+      (polyline
+        (pts (xy -4.04 5.254) (xy 4.04 5.254)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 4.04 5.254) (xy -0.024 0.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -0.024 0.08) (xy 0.024 0.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.024 0.08) (xy -4.04 5.254)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 5.08) (xy 0.0 0.0)) (stroke (width 0.254))
+      )
+      (pin bidirectional line (at 0.0 -4.92 90.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "RF_IN"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)

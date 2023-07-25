@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DTC143ZEBTL
+D ROHM, DTC143ZEBTL NPN Digital Transistor, 100 mA 50 V 4.7 k, Ratio Of 10, 3-Pin SC-89
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/65f79013acac3be2ce67f49282ff3c06.pdf
+$ENDCMP
+#
+#End Doc Library

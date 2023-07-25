@@ -1,0 +1,72 @@
+(Japanese_coding: sjis)
+(function "ECS_552132"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-06-05-08:15:57)
+    (utime 2023-03-07-16:10:32)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 3) (portType INOUT))
+        (port "3" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "AO3401A")
+)
+
+
+(pinAssign "ECS_552132"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-06-05-08:15:57)
+    (utime 2023-03-07-16:10:32)
+    (interface
+        (port "1" (symbPinId 1) (portName "G") (portType INOUT))
+        (port "2" (symbPinId 3) (portName "S") (portType INOUT))
+        (port "3" (symbPinId 2) (portName "D") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_552132")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+                (port "3" (match "3"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "AO3401A")
+)
+
+
+(part "AO3401A"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-06-05-08:15:57)
+    (utime 2023-03-07-16:10:32)
+    (packageRef "AO3401A")
+    (pinAssignRef "ECS_552132")
+    (interface
+        (port "1" (symbPinId 1) (portName "G") (portType INOUT))
+        (port "2" (symbPinId 3) (portName "S") (portType INOUT))
+        (port "3" (symbPinId 2) (portName "D") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "Q")
+    (property "description" "30V P-Channel MOSFET")
+    (property "Manufacturer_Name" "Alpha & Omega Semiconductors")
+    (property "Manufacturer_Part_Number" "AO3401A")
+    (property "Mouser_Part_Number" "")
+    (property "Mouser_Price/Stock" "")
+    (property "Arrow_Part_Number" "AO3401A")
+    (property "Arrow_Price/Stock" "https://www.arrow.com/en/products/ao3401a/alpha-and-omega-semiconductor?region=nac")
+    (property "Datasheet_Link" "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf")
+    (property "compAreaTopHeight" 1.25)
+)
+
+

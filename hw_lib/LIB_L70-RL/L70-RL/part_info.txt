@@ -1,0 +1,9 @@
+Manufacturer=Quectel
+PartNumber=L70-RL
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=18
+Version=2.2
+Released=2020-12-08 13:54:45
+Downloaded=2023-07-15 21:27:17
+3D=Y
