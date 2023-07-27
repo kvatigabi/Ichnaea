@@ -1,3 +1,5 @@
+""" Script to calculate Supercapacitor voltage and 
+current curve for a given capacity and resistance """
 import matplotlib.pyplot as plt
 import math
 import numpy as np

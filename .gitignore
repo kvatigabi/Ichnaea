@@ -1,2 +1,7 @@
 strategy.txt
 /external_hw
+\#
+/picoballoon-backups
+*.
+!.gitignore
+*.ods#
