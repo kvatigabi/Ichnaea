@@ -5,3 +5,6 @@ strategy.txt
 *.
 !.gitignore
 *.ods#
+/misc
+*cache
+*table
