@@ -20,7 +20,7 @@ def makeChargePlots(timeArray, voltageArray, currentArray):
    for voltageVal in np.arange(capStartChargeVoltage, 3, 0.01):
       time = np.log(3.3/(3.3-voltageVal))*capFarad*(capESR+protectRes1)
       timeArray.append(time) 
-
+   
    for seconds in timeArray: 
       voltage = 3.3*(1-math.exp(-seconds/((capESR+protectRes1)*capFarad)))
       voltageArray.append(voltage)
@@ -30,8 +30,8 @@ def makeChargePlots(timeArray, voltageArray, currentArray):
       currentArray.append(current)
 
 
-def calculateCapEnergy():
-   energy = capFarad*(math.pow(charging_voltage,2) - math.pow(minimum_voltage,2))/2
+def calculateCapEnergy(): #calculate total cap energy@charging_voltage
+   energy = capFarad*(math.pow(charging_voltage,2) - math.pow(0,2))/2
    return energy
 
 def capConstantPowerDischargeFromGPS():
@@ -45,8 +45,8 @@ def calulateVoltageRemainingFromLORAburst():
    PowerUsed = (3.3*0.2) 
    energyUsed = PowerUsed * 1
    energy_remaining = calculateCapEnergy() - energyUsed
-   voltage_remaining = (-energy_remaining*2)/capFarad + math.pow(charging_voltage,2)
-   return math.pow(voltage_remaining,2)
+   voltage_remaining = (energy_remaining*2)/capFarad
+   return math.sqrt(voltage_remaining)
 
 
 #print (capConstantPowerDischargeFromGPS())
@@ -74,4 +74,4 @@ plt.xlabel("Time of charging in minutes")
 plt.ylabel("Cap current in mA")
 
 
-plt.show()   
+#plt.show()   
