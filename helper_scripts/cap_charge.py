@@ -8,7 +8,7 @@ timeArray = []
 voltageArray = []
 currentArray = []
 """ CAP """
-protectRes1 = 90
+protectRes1 = 170
 capFarad = 1.5
 capESR = 15
 charging_voltage = 3 #initial voltage of cap
@@ -74,4 +74,4 @@ plt.xlabel("Time of charging in minutes")
 plt.ylabel("Cap current in mA")
 
 
-#plt.show()   
+plt.show()   
