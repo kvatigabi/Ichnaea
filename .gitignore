@@ -1,12 +1,11 @@
 strategy.txt
 /external_hw
-\#
+
 /picoballoon-backups
 *.
 !.gitignore
-*.ods#
 /misc
 *cache
 *table
-/hw_lib/compressed_libs
-rules.txt
+*hw_lib/compressed_libs
+/datasheets
