@@ -1,11 +1,11 @@
-strategy.txt
 /external_hw
-
-/picoballoon-backups
+picoballoon-backups
 *.
 !.gitignore
-/misc
+/misc/strategy.txt
 *cache
 *table
 *hw_lib/compressed_libs
-/datasheets
+fw/.vscode/
+fw/build/
+gerber*
