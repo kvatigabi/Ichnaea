@@ -9,3 +9,4 @@ picoballoon-backups
 fw/.vscode/
 fw/build/
 gerber*
+hw/~picoballoon.kicad_pcb.lck
