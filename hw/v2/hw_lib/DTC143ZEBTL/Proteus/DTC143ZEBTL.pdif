@@ -1,0 +1,144 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "DTC143ZEBTL"
+   (description "ROHM, DTC143ZEBTL NPN Digital Transistor, 100 mA 50 V 4.7 k, Ratio Of 10, 3-Pin SC-89")
+   (family "TRX")
+   (package "SOTFL50P160X85-3N")
+   (attribute "Datasheet Link" "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/65f79013acac3be2ce67f49282ff3c06.pdf")
+   (attribute "Geometry.Height" "0.85mm")
+   (attribute "Manufacturer_Name" "ROHM Semiconductor")
+   (attribute "Manufacturer_Part_Number" "DTC143ZEBTL")
+   (attribute "Mouser Part Number" "755-DTC143ZEBTL")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/DTC143ZEBTL?qs=IsRgwgmxh6%252Bn%252Bp0edl8N%2Fw%3D%3D")
+   (attribute "Arrow Part Number" "DTC143ZEBTL")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/dtc143zebtl/rohm-semiconductor")
+   (gate
+    (symbol "DTC143ZEBTL")
+    (pin "B" 1 PS)
+    (pin "E" 2 PS)
+    (pin "C" 3 PS)
+   )
+  )
+  (symbol "DTC143ZEBTL"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (circle (pt 400 150) (pt 300 -150))
+   )
+   (graphic
+    (stroke 20)
+    (path (pt 300 100) (pt 300 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 50) (pt 400 150))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 -50) (pt 400 -150))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 400 -150) (pt 400 -200))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 400 150) (pt 400 200))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 100 0) (pt 300 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (closed true) (pt 330 -100) (pt 350 -80) (pt 370 -120) (pt 330 -100))
+   )
+   (terminal
+    (body (symbol "PINSHORT") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 0 -20) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 20) (rot 0) (just BOTTOM LEFT) (visible true)))
+   (terminal
+    (body (symbol "PINSHORT") (pt 400 -300) (rot 90) (mir 0) (visible true))
+    (name (pt 0 -20) (rot 90) (just TOP RIGHT) (visible false))
+    (number (pt 0 20) (rot 90) (just TOP LEFT) (visible true)))
+   (terminal
+    (body (symbol "PINSHORT") (pt 400 300) (rot 90) (mir X) (visible true))
+    (name (pt 0 -20) (rot 90) (just TOP RIGHT) (visible false))
+    (number (pt 0 20) (rot 90) (just TOP LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SOTFL50P160X85-3N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -1.22 1)
+      (pt 1.22 1)
+      (pt 1.22 -1)
+      (pt -1.22 -1)
+      (pt -1.22 1))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -0.43 0.8)
+      (pt 0.43 0.8)
+      (pt 0.43 -0.8)
+      (pt -0.43 -0.8)
+      (pt -0.43 0.8))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -0.43 0.3)
+      (pt 0.07 0.8))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -0.08 0.8)
+      (pt 0.08 0.8)
+      (pt 0.08 -0.8)
+      (pt -0.08 -0.8)
+      (pt -0.08 0.8))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -1.07 0.99)
+      (pt -0.43 0.99))))
+   (leg 1 (pt -0.75 0.5) (padstack 0))
+   (leg 2 (pt -0.75 -0.5) (padstack 0))
+   (leg 3 (pt 0.75 0) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.48 0.64 0 0 0))
+   )
+   (model "DTC143ZEBTL.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

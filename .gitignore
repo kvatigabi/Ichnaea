@@ -1,5 +1,5 @@
 /external_hw
-picoballoon-backups
+datasheets/
 *.
 !.gitignore
 /misc/strategy.txt
@@ -8,5 +8,7 @@ picoballoon-backups
 *hw_lib/compressed_libs
 fw/.vscode/
 fw/build/
-gerber*
-hw/~picoballoon.kicad_pcb.lck
+hw/v1/dev/
+hw/v2/dev/
+hw/v1/dev/hw_lib
+hw/v2/dev/hw_lib

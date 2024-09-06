@@ -1,4 +1,7 @@
 # Ichnaea
 Custom Picoballoon tracker.
-![alt text](hw/PCB.png)
-![alt text](hw/Schematic.jpg)
+- ## Version 1
+![alt text](hw/v1/PCB.png)
+- ## Version 2
+![alt text](hw/v2/PCB.png)
+    Much smaller and lighter than Ver.1 with some hardware features moved into software

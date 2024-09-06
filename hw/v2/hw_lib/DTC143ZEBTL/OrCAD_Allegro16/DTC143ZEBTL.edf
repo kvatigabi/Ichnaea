@@ -1,0 +1,179 @@
+
+(EDIF
+  (rename &DTC143ZEBTL "DTC143ZEBTL")
+  (EDIFVersion 2 0 0)
+  (EDIFLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2023 07 20 16 33 29)
+      (dataOrigin "471759/1159423/2.50/3/3/Transistor BJT NPN")
+      (program "SamacSys ECAD Model DTC143ZEBTL"
+        (version "1.1"))))
+  (library
+  (rename &DTC143ZEBTL "DTC143ZEBTL")
+    (EDIFLevel 0)
+    (technology
+      (numberDefinition (scale 1 (e 254 -6) (unit DISTANCE)))
+      (userData GRIDRESOLUTION (integer 50 50))
+      (figureGroup DEFAULT (pathWidth 10) (textHeight 100))
+      (figureGroup PROPERTY (pathWidth 10) (textHeight 90))
+      (figureGroup PINNUMBER (pathWidth 10) (textHeight 90))
+      (figureGroup PINNAME (pathWidth 10) (textHeight 90))
+      (figureGroup COMMENT (pathWidth 10) (textHeight 90))
+      (figureGroup PIN (pathWidth 10) (textHeight 90))
+      (figureGroup GRAPHIC (pathWidth 10) (textHeight 100))
+    )
+    (cell
+      (rename &DTC143ZEBTL "DTC143ZEBTL")
+      (cellType GENERIC)
+      (view
+        (rename NORMAL "Normal")
+        (viewType SCHEMATIC)
+        (interface
+          (designator "Q")
+          (property (rename PACKAGENAME "PackageName") (string "DTC143ZEBTL"))
+          (property (rename ISHETEROGENEOUS "IsHeterogeneous") (string "False"))
+          (property (rename DEVICESINVIEW "DevicesInView") (string "1"))
+          (property (rename DEVICESINPACKAGE "DevicesInPackage") (string "1"))
+          (property (rename DEVICEDESIGNATOR "DeviceDesignator") (string "A"))
+          (property (rename DEVICENUMBERING "DeviceNumbering") (string "Alpha"))
+          (property (rename PCB_32_FOOTPRINT "PCB Footprint") (string "SOTFL50P160X85-3N"))
+          (property (rename &Manufacturer_Name "Manufacturer_Name") (string "ROHM Semiconductor"))
+          (property (rename &Manufacturer_Part_Number "Manufacturer_Part_Number") (string "DTC143ZEBTL"))
+          (property (rename &Mouser_Part_Number "Mouser Part Number") (string "755-DTC143ZEBTL"))
+          (property (rename &Mouser_Price_Stock "Mouser Price/Stock") (string "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/DTC143ZEBTL?qs=IsRgwgmxh6%252Bn%252Bp0edl8N%2Fw%3D%3D"))
+          (property (rename &Arrow_Part_Number "Arrow Part Number") (string "DTC143ZEBTL"))
+          (property (rename &Arrow_Price_Stock "Arrow Price/Stock") (string "https://www.arrow.com/en/products/dtc143zebtl/rohm-semiconductor"))
+          (property (rename &Description "Description") (string "ROHM, DTC143ZEBTL NPN Digital Transistor, 100 mA 50 V 4.7 k, Ratio Of 10, 3-Pin SC-89"))
+          (property (rename &Datasheet_Link "Datasheet Link") (string "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/65f79013acac3be2ce67f49282ff3c06.pdf"))
+          (property (rename &Height "Height") (string "0.85 mm"))
+          (property (rename &_60__32_VALUE_32__62_ "Value") (string "DTC143ZEBTL"))
+          (property (rename VALUE "Value") (string "Value"))
+          (port
+            (rename &B "B")
+            (designator "1")
+            (property (rename ORDER "Order") (string "0") (owner "OrCAD"))
+          )
+          (port
+            (rename &E "E")
+            (designator "2")
+            (property (rename ORDER "Order") (string "1") (owner "OrCAD"))
+          )
+          (port
+            (rename &C "C")
+            (designator "3")
+            (property (rename ORDER "Order") (string "2") (owner "OrCAD"))
+          )
+          (symbol
+            (portImplementation
+              (name &B)
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt -100 -200) (pt 0 -200))))
+              (connectLocation (figure GRAPHIC (dot (pt -100 -200))))
+            )
+            (portImplementation
+              (name &E)
+              (figure PIN (path (pointList (pt 300 -500) (pt 300 -400))))
+              (connectLocation (figure GRAPHIC (dot (pt 300 -500))))
+            )
+            (portImplementation
+              (name &C)
+              (figure PIN (path (pointList (pt 300 100) (pt 300 0))))
+              (connectLocation (figure GRAPHIC (dot (pt 300 100))))
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 200))
+              (path
+                (pointList
+                  (pt 200 -100)
+                  (pt 200 -300)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 200 -150)
+                  (pt 300 -50)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 200 -250)
+                  (pt 300 -350)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 300 -350)
+                  (pt 300 -400)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 300 -50)
+                  (pt 300 0)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 0 -200)
+                  (pt 200 -200)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (circle
+                (pt 92 -200)
+                (pt 408 -200)
+              )
+            )
+              (figure GRAPHIC
+                (figureGroupOverride GRAPHIC
+	              (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (true)
+                      )
+                    )
+                  )
+                )
+              (polygon
+                (pointList
+                  (pt 230 -300)
+                  (pt 250 -280)
+                  (pt 270 -320)
+                  (pt 230 -300)
+                )
+              )
+            )
+            (keywordDisplay DESIGNATOR (display PROPERTY (justify LOWERLEFT) (orientation R0) (origin (pt 450 -220))))
+            (propertyDisplay &_60__32_VALUE_32__62_ (display PROPERTY (justify LOWERLEFT) (orientation R0) (origin (pt 450 -320))))
+          )
+        )
+      )
+    )
+  )
+)

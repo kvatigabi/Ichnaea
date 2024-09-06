@@ -8,13 +8,14 @@ timeArray = []
 voltageArray = []
 currentArray = []
 """ CAP """
-protectRes1 = 170
+protectRes1 = 150
+protectRes2 = 90
 capFarad = 1.5
 capESR = 15
-charging_voltage = 3 #initial voltage of cap
+charging_voltage = 3.1 #initial voltage of cap
 minimum_voltage = 0.8 # minimum voltage power regulator can work with
 capStartChargeVoltage = 0 #cant be higher than 3
-
+minAllowedVoltage = 0.7
 
 def makeChargePlots(timeArray, voltageArray, currentArray):
    for voltageVal in np.arange(capStartChargeVoltage, 3, 0.01):
@@ -60,18 +61,22 @@ for secs in timeArray:
 
 
 
-plt.subplot(1,2,1)
-plt.title("Cap Voltage curve with res R=%i" %protectRes1)
+plt.subplot(1,4,1)
+plt.title("Cap Volts res R=%i" %protectRes1)
 plt.plot(timeArrayMinutes, voltageArray, color='red')
 plt.xlabel("Time of charging in minutes")
 plt.ylabel("Cap Voltage in Volts")
-plt.axhline(y = 2.7, color = 'g', linestyle = '-')
+minVolts = plt.axhline(y = minAllowedVoltage, color = 'g', linestyle = '-')
+plt.legend([minVolts],['Minimum Allowed Voltage'], bbox_to_anchor=(0.75, 1.15), ncol=2)
 
-plt.subplot(1,2,2)
-plt.title("cap current with res: R=%i" %protectRes1)
+plt.subplot(1,4,2)
+plt.title("cap current res R=%i" %protectRes1)
 plt.plot(timeArrayMinutes, currentArray)
 plt.xlabel("Time of charging in minutes")
 plt.ylabel("Cap current in mA")
+
+plt.subplot(1,4,3)
+plt.title("Cap volts res R=%i" %prote)
 
 
 plt.show()   

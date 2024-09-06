@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "L70RL"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "L70RL")
+        (spec "default")
+    )
+)

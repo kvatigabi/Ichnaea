@@ -1,0 +1,18 @@
+.AO3401A :1 ;30V P-Channel MOSFET
+SOT95P280X125-3N
+*STM Q
+*NGS
+*PLB 1="G" 2="S" 3="D"
+*MXP 3
+*DFN AO3401A
+~!Manufacturer_Name (Alpha & Omega Semiconductors)
+~!Manufacturer_Part_Number (AO3401A)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Arrow Part Number (AO3401A)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/ao3401a/alpha-and-omega-semiconductor?region=nac)
+~!Link Datasheet (http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf)
+~!Height (1.25mm)
+~!3D_Model (AO3401A)
+AO3401A
+1.1!U 2.1!U 3.1!U 

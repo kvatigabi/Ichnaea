@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "L70-RL"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2021-01-23-18:42:08)
+    (mountForm default
+        (footprintRef "L70RL")
+        (spec "System")
+    )
+)

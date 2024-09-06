@@ -1,0 +1,206 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "L70-RL"
+   (description "GPS Module with Built-in LNA SMD - Tape and Reel")
+   (family "ANA")
+   (package "L70RL")
+   (attribute "Datasheet Link" "")
+   (attribute "Geometry.Height" "2.65mm")
+   (attribute "Manufacturer_Name" "Quectel")
+   (attribute "Manufacturer_Part_Number" "L70-RL")
+   (attribute "Mouser Part Number" "")
+   (attribute "Mouser Price/Stock" "")
+   (attribute "Arrow Part Number" "")
+   (attribute "Arrow Price/Stock" "")
+   (gate
+    (symbol "L70-RL")
+    (pin "GND_1" 1 PS)
+    (pin "TXD1" 2 PS)
+    (pin "RXD1" 3 PS)
+    (pin "1PPS" 4 PS)
+    (pin "STANDBY" 5 PS)
+    (pin "V_BCKP" 6 PS)
+    (pin "NC_1" 7 PS)
+    (pin "VCC" 8 PS)
+    (pin "RESET" 9 PS)
+    (pin "GND_2" 10 PS)
+    (pin "RF_IN" 11 PS)
+    (pin "GND_3" 12 PS)
+    (pin "ANTON" 13 PS)
+    (pin "VCC_RF" 14 PS)
+    (pin "NC_2" 15 PS)
+    (pin "RESERVED_1" 16 PS)
+    (pin "RESERVED_2" 17 PS)
+    (pin "TIMER" 18 PS)
+   )
+  )
+  (symbol "L70-RL"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1400 100) (pt 1400 -900) (pt 200 -900) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 1600 -800) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1600 -700) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1600 -600) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1600 -500) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1600 -400) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1600 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1600 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1600 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1600 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -400) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -500) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -600) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -700) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -800) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "L70RL"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -4.85 5.05)
+      (pt 4.85 5.05)
+      (pt 4.85 -5.05)
+      (pt -4.85 -5.05)
+      (pt -4.85 5.05))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -6.75 6.05)
+      (pt 6.75 6.05)
+      (pt 6.75 -6.05)
+      (pt -6.75 -6.05)
+      (pt -6.75 6.05))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -3.8 -5.05)
+      (pt 3.6 -5.05))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -3.6 5.05)
+      (pt 3.6 5.05))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt 6 -4.6)
+      (arc (pt 6.000 -4.600) (pt 6.000 -4.650) (pt 6.100 -4.550) (start 180.0) (sweep 180.0))
+      (pt 6.1 -4.6)
+      (arc (pt 6.100 -4.600) (pt 6.000 -4.650) (pt 6.100 -4.550) (start 180.0) (sweep .0))
+      (pt 6 -4.6))))
+   (leg 1 (pt 4.850 -4.400) (padstack 0))
+   (leg 2 (pt 4.850 -3.300) (padstack 0))
+   (leg 3 (pt 4.850 -2.200) (padstack 0))
+   (leg 4 (pt 4.850 -1.100) (padstack 0))
+   (leg 5 (pt 4.850 0.000) (padstack 0))
+   (leg 6 (pt 4.850 1.100) (padstack 0))
+   (leg 7 (pt 4.850 2.200) (padstack 0))
+   (leg 8 (pt 4.850 3.300) (padstack 0))
+   (leg 9 (pt 4.850 4.400) (padstack 0))
+   (leg 10 (pt -4.850 4.400) (padstack 0))
+   (leg 11 (pt -4.850 3.300) (padstack 0))
+   (leg 12 (pt -4.850 2.200) (padstack 0))
+   (leg 13 (pt -4.850 1.100) (padstack 0))
+   (leg 14 (pt -4.850 0.000) (padstack 0))
+   (leg 15 (pt -4.850 -1.100) (padstack 0))
+   (leg 16 (pt -4.850 -2.200) (padstack 0))
+   (leg 17 (pt -4.850 -3.300) (padstack 0))
+   (leg 18 (pt -4.850 -4.400) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (ovalf 0.800 1.800 0 0.000))
+   )
+   (model "L70-RL.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

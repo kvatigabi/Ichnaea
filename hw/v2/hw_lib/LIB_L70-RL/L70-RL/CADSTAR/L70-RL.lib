@@ -1,0 +1,18 @@
+.L70-RL :1 ;GPS Module with Built-in LNA SMD - Tape and Reel
+L70RL
+*STM IC
+*NGS
+*PLB 1="GND_1" 2="TXD1" 3="RXD1" 4="1PPS" 5="STANDBY" 6="V_BCKP" 7="NC_1" 8="VCC" 9="RESET" 10="GND_2" 11="RF_IN" 12="GND_3" 13="ANTON" 14="VCC_RF" 15="NC_2" 16="RESERVED_1" 17="RESERVED_2" 18="TIMER"
+*MXP 18
+*DFN L70-RL
+~!Manufacturer_Name (Quectel)
+~!Manufacturer_Part_Number (L70-RL)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (-)
+~!Height (2.65mm)
+~!3D_Model (L70-RL)
+L70-RL
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 15.1!U 16.1!U 17.1!U 18.1!U 
