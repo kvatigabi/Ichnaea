@@ -24,35 +24,49 @@ enum STATE{
 
 NMEAGPS gps;
 gps_fix currentFix;
-
 STATE craftState;
-supercap supercap;
+Supercap supercapState;
 
 
 void setup(){
-gps_setup();
-gpsSerial.begin(9600);
-supercapChargeControl(DISABLE_CHARGE);
 
+//gps_setup();
+//gpsSerial.begin(9600);
+setupHSEclock();
+supercapState = DISABLE_CHARGE;
 craftState = STARTUP;
+
+
+supercapChargeControl(&supercapState);
+
 }
 
 void loop(){
+static uint32_t currentTime = millis();
 
 
+switch (craftState){
+    case STARTUP:
+        //proceed after VDD is above MINIMUM_VDDA_STARTUP
+        if(checkVDDAWithinlimits(&currentTime, VDDA_CHECK_DELAY)){
+            craftState = RUNNING;
+        }
+
+    case RUNNING:
+    //must make sure supercap is ready before we proceed with NAV_SEARCH
 
 
+    case NAV_SEARCH:
 
-switch (craftState)
-{
-case STARTUP:
-    /* code */
+
+    case DATA_SEND:
+
+
+    default:
+        break;
     
-    break;
-
-default:
-    break;
-}
+    
+    }
 
 
 

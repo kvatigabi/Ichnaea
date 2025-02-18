@@ -7,10 +7,8 @@
 
 
 
-//Setut HSE clock
-//return false if failed
-bool setupHSEclock(){
-
+//Setup HSE clock
+void setupHSEclock(){
 
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
@@ -24,30 +22,26 @@ bool setupHSEclock(){
   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV4;
-  RCC_OscInitStruct.PLL.PLLN = 16;
-  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
-  RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV8;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
-    return false;
+    Error_Handler();
   }
 
   /** Initializes the CPU, AHB and APB buses clocks
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSE;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
 
- if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK){
-    return false;
- }
-
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+  {
+    Error_Handler();
+  }
 }
+
 
 uint16_t getVrefVoltage(){
   return analogRead(AVREF);
@@ -57,9 +51,11 @@ uint16_t getTempMCU(){
   return analogRead(ATEMP);
 }
 
-void calculateActualVref(uint16_t (&vref), uint16_t (&actualVref)){
 
-  actualVref = VREFINT_CAL_VREF*((*VREFINT_CAL_ADDR)/(vref));
+//Connected to VDD
+uint16_t getActualVref(){
+
+  return VREFINT_CAL_VREF*((*VREFINT_CAL_ADDR)/(getVrefVoltage()));
 
 }
 
@@ -81,7 +77,7 @@ turnOn == true ? digitalWrite(DC_EN, HIGH) : digitalWrite(DC_EN, LOW);
 }
 
 
-void supercapChargeControl(supercap chrg_res){
+void supercapChargeControl(Supercap *chrg_res){
 
   static bool arePinsInitialized = false;
   if(!arePinsInitialized){
@@ -89,7 +85,7 @@ void supercapChargeControl(supercap chrg_res){
     pinMode(LowPowCapChrg, OUTPUT);
     arePinsInitialized = true;
   }
-switch (chrg_res)
+switch (*chrg_res)
 {
 case LOW_RES_HIGHPOW:
   digitalWrite(HighPowCapChrg, HIGH);
@@ -98,9 +94,11 @@ case LOW_RES_HIGHPOW:
 case HIGH_RES_LOWPOW:
   digitalWrite(HighPowCapChrg, LOW);
   digitalWrite(LowPowCapChrg, HIGH);
+  break;
 case DISABLE_CHARGE:
   digitalWrite(HighPowCapChrg, LOW);
   digitalWrite(LowPowCapChrg, LOW);
+  break;
 default:
   digitalWrite(HighPowCapChrg, LOW);
   digitalWrite(LowPowCapChrg, LOW);
@@ -109,3 +107,15 @@ default:
 
 }
 
+//Check every vddaMillisecondCheckTime the voltage on VDDA
+//Returns True if getActualVref>=MINIMUM_VDDA_STARTUP
+bool checkVDDAWithinlimits(uint32_t *currentTime, uint32_t vddaMillisecondCheckTime){
+  static uint32_t prevTime = 0;
+  if(*currentTime - prevTime >= vddaMillisecondCheckTime){
+    if(getActualVref()>=MINIMUM_VDDA_STARTUP){
+      return true;
+    } 
+  }
+  prevTime = *currentTime;
+  return false;
+}

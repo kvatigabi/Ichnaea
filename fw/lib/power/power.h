@@ -3,21 +3,24 @@
 #include <stdint.h>
 #include "global_defines.h"
 
-bool setupHSEclock();
+void setupHSEclock();
+
+
+
 
 uint16_t getVrefVoltage();
 uint16_t getTempMCU();
 uint16_t getSupercapVolt();
 
 
-void calculateActualVref(uint32_t (&vref), uint32_t(&actualVref));
+uint16_t getActualVref();
 
 //Enable/Disable power to LORA chip while acting as a backup for the MCU, in case power dies
 void LoraPower(bool turnOn);
 
 
-void supercapChargeControl(supercap chrg_res);
-
+void supercapChargeControl(Supercap *chrg_res);
+bool checkVDDAWithinlimits(uint32_t *currentTime, uint32_t vddaMillisecondCheckTime);
 
 
 
